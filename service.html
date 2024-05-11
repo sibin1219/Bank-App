@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<style>
+   body {
+      /* Set the background image */
+      background-image: url('https://propertyadvice.com.au/wp-content/uploads/2022/09/bigstock-Banking-Technology-Concept-Des-442976291-scaled.jpg');
+      /* Set background image size and position */
+      background-size: cover;
+      
+    }
+    .custom-hover:hover {
+          background-color: lightblue;
+          color: white;
+          border-radius: 20px;
+          width: 70px;
+          text-align: center;
+        }
+    
+
+</style>
+
+  </head>
+
+<section id="main"><body style="overflow: hidden;">
+  <section style="z-index: auto;"><nav class="navbar navbar-expand-lg " style="z-index: auto;">
+      <div class="container-fluid" style="z-index: auto;">
+        <a class="navbar-brand" href="#"><h1>My Bank</h1></a>
+        
+        <div class="container-fluid " style=" margin-left: 900px;" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active custom-hover"  href="http://127.0.0.1:5500/home.html">Home</a>
+            </li>
+            <li class="nav-item" style="background-color: rgb(0, 102, 255); border-radius: 10px; color:rgb(255, 253, 253);">
+              <a style="color: aliceblue;" class="nav-link custom-hover" href="#">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-hover" href="#">Settings</a>
+            </li>
+            <li class="nav-item custom-hover">
+              <a class="nav-link" href="http://127.0.0.1:5500/loginpage.html">Log out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav></section>
+
+    <div style="display:flex; top: 200px; border-radius: 30px; background-color: rgba(155, 157, 151, 0.5);text-align: center;"><h1 id="disp" style="width: 1581px;color: #fffcfc;"> </h1></div>
+  
+    <div id="row" style="display: flex;">
+
+    <div class=" col-4" style="   margin-top: 160px; margin-left: 100px; height: 300px; border-radius: 30px; background-color: rgba(155, 157, 151, 0.5);text-align: center;">
+    <h3>Deposite</h3><br>
+    <input id="deposit" class="form-control" style="width:300px ;margin-left: 110px; " type="text" placeholder="Enter the amount"><br>
+    <input id="pswd3" class="form-control" style="width:300px ;margin-left: 110px;" type="text" placeholder="Enter the password"><br>
+    <button class="btn btn-primary" onclick="depo()" style="border-radius: 20px; width: 100px;">Deposit</button>
+    <div id="balance"></div>
+    
+    </div>
+    
+    
+    <div class=" col-4" style="   margin-top: 160px; margin-left: 300px; height: 300px; border-radius: 30px; background-color: rgba(155, 157, 151, 0.5);text-align: center;">
+      <h3>Withdraw</h3><br>
+      <input id="deposit1" class="form-control" style="width:300px ;margin-left: 110px; " type="text" placeholder="Enter the amount"><br>
+      <input id="pswd4" class="form-control" style="width:300px ;margin-left: 110px;" type="text" placeholder="Enter the password"><br>
+      <button class="btn btn-primary" onclick="witd()" style="border-radius: 20px; width: 100px;">Withdraw</button>
+      <div id="balanace1"></div>
+      
+  </div>
+  
+  </section>
+  <div style="color: azure;margin-left: 650px;font-size: xx-large; " id="depodiv">
+     
+  </div>
+
+    
+   
+</body>
+<script src="./service.js"></script>
+<script src="./register.js"></script>
+</html>
